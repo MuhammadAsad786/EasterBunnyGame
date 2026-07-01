@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — Easter Bunny Runner</title>
+<meta name="description" content="Get in touch with the Easter Bunny Runner team. Questions, feedback, or bug reports — send us a message." />
+<link rel="icon" href="assets/img/appicon.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/appicon.webp" alt="Easter Bunny Runner icon" />
+      <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a class="btn btn--primary btn--sm nav-cta" href="#REPLACE_WITH_PLAY_STORE_URL">Get the Game</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="container reveal">
+    <span class="eyebrow">💌 Say hello</span>
+    <h1>Contact Us</h1>
+    <p>Found a bug, have an idea, or just want to share a high score? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Aside -->
+      <aside class="contact-aside">
+        <div class="card reveal">
+          <h3 style="margin-bottom:6px">Reach the burrow 🐰</h3>
+          <p style="margin-bottom:16px">The quickest way to reach us is by email. Tap below or use the form — both land in the same inbox.</p>
+          <a class="mail-big" href="mailto:bushramanzoor302@gmail.com">
+            <span class="ic">✉️</span> bushramanzoor302@gmail.com
+          </a>
+        </div>
+
+        <div class="card reveal">
+          <h3 style="margin-bottom:10px">What to expect</h3>
+          <ul style="display:flex;flex-direction:column;gap:10px">
+            <li>⏱️ <strong>Response time:</strong> usually within 2–3 days.</li>
+            <li>🐞 <strong>Bug reports:</strong> tell us your device &amp; what happened.</li>
+            <li>💡 <strong>Ideas:</strong> new skins, modes, power-ups — all welcome!</li>
+          </ul>
+        </div>
+
+        <div class="card reveal" style="text-align:center;background:linear-gradient(135deg,rgba(95,208,168,.12),rgba(155,208,255,.12))">
+          <img src="assets/img/whitebunny.png" alt="" style="width:120px;margin:0 auto 8px" />
+          <p style="font-weight:600;color:var(--ink)">Thanks for hopping by!</p>
+        </div>
+      </aside>
+
+      <!-- Form -->
+      <div class="form-card reveal">
+        <h2 style="font-size:1.5rem;margin-bottom:6px">Send a message</h2>
+        <p style="color:var(--ink-soft);margin-bottom:22px;font-size:.96rem">Fill in the details and hit send — your device's email app will open with everything ready to go.</p>
+
+        <!-- data-mailto holds the destination address used by main.js -->
+        <form data-mailto-form data-mailto="bushramanzoor302@gmail.com" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Hopster McFluff" autocomplete="name" />
+            <span class="err">Please tell us your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            <span class="err">Please enter a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="subject">Subject <span style="color:var(--ink-soft);font-weight:400">(optional)</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Feedback, bug report, idea…" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+            <span class="err">Please write a short message.</span>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Send Message ✉️</button>
+          <p class="form-note">By sending, your email app opens a pre-filled message to <strong>bushramanzoor302@gmail.com</strong>. We only use your email to reply.</p>
+          <div class="form-success">🎉 Your email app should be opening — just press send! If nothing happened, email us directly at bushramanzoor302@gmail.com.</div>
+        </form>
+
+        <!-- No-JS / fallback: a plain mailto link is always available -->
+        <noscript>
+          <p style="margin-top:14px">JavaScript is off — please email us directly at
+            <a href="mailto:bushramanzoor302@gmail.com" style="color:var(--mint-deep);font-weight:600">bushramanzoor302@gmail.com</a>.
+          </p>
+        </noscript>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/img/appicon.webp" alt="" />
+        <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+      </a>
+      <p>A cosy, fast-paced arcade runner full of eggs, coins, and springtime charm. Made with 🥕 for casual hoppers everywhere.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#characters">Bunnies</a>
+      <a href="index.html#screenshots">Screenshots</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal &amp; Help</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailto:bushramanzoor302@gmail.com">Email Support</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    © <span id="year">2026</span> Easter Bunny Runner. All rights reserved. 🐰
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

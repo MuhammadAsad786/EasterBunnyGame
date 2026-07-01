@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Easter Bunny Runner — Hop, Dodge &amp; Collect</title>
+<meta name="description" content="Easter Bunny Runner is a cosy, fast-paced arcade runner. Drag your bunny up a scrolling meadow, dodge hazards, collect eggs, coins &amp; diamonds, unlock skins, and chase the high score." />
+<link rel="icon" href="assets/img/appicon.webp" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/appicon.webp" alt="Easter Bunny Runner icon" />
+      <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <!-- TODO: replace href below with your real Google Play listing URL -->
+      <a class="btn btn--primary btn--sm nav-cta" href="#REPLACE_WITH_PLAY_STORE_URL">Get the Game</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero section" data-hero>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-hero-el>🐰 A cosy arcade runner</span>
+      <h1 class="hero-title" data-hero-el>
+        <span class="l1">Hop. Dodge.</span>
+        <span class="l2">Collect the Eggs.</span>
+      </h1>
+      <p class="hero-tag" data-hero-el>
+        Guide your Easter bunny up an endless springtime meadow. Drag to weave between
+        rocks and trees, scoop up eggs, coins &amp; diamonds, grab power-ups, and keep
+        your three lives alive as the world speeds up.
+      </p>
+      <div class="hero-actions" data-hero-el>
+        <!-- TODO: paste your Google Play URL into the href below -->
+        <a class="btn-play" href="#REPLACE_WITH_PLAY_STORE_URL" aria-label="Get it on Google Play">
+          <span class="pl-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><defs><linearGradient id="gp" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00C3FF"/><stop offset=".42" stop-color="#34B389"/><stop offset=".72" stop-color="#F4C84A"/><stop offset="1" stop-color="#FF6F4D"/></linearGradient></defs><g fill="url(#gp)"><path d="M3.06 1.3C2.79 1.53 2.62 1.9 2.62 2.38v19.24c0 .48.17.85.45 1.07l.07.06L13.9 12.07v-.14L3.13 1.24l-.07.06z"/><path d="M17.5 15.66 13.9 12.07v-.14l3.6-3.59.08.05 4.26 2.42c1.22.69 1.22 1.82 0 2.51l-4.34 2.34z"/><path d="M17.58 15.61 13.9 11.93 3.06 22.75c.4.43 1.07.48 1.82.06l12.7-7.2z"/><path d="M17.58 8.39 4.88 1.19C4.13.77 3.46.82 3.06 1.25l10.84 10.82 3.68-3.68z"/></g></svg>
+          </span>
+          <span class="pl-txt"><span class="pl-sub">Get it on</span><span class="pl-main">Google Play</span></span>
+        </a>
+        <a class="btn btn--ghost" href="#features">Explore Features</a>
+      </div>
+      <div class="hero-stats" data-hero-el>
+        <div class="hstat"><div class="num"><span data-count="5">5</span></div><div class="lbl">Bunny Skins</div></div>
+        <div class="hstat"><div class="num"><span data-count="3">3</span></div><div class="lbl">Game Modes</div></div>
+        <div class="hstat"><div class="num"><span data-count="3">3</span><span>×</span></div><div class="lbl">Difficulties</div></div>
+      </div>
+    </div>
+
+    <!-- Hero stage: phone mockup + floating collectibles -->
+    <div class="hero-stage">
+      <img class="floaty f1" data-parallax="0.5" src="assets/img/egg-yellow.png" alt="" />
+      <img class="floaty f2" data-parallax="0.3" src="assets/img/coin.png" alt="" />
+      <img class="floaty f3" data-parallax="0.6" src="assets/img/egg-green.png" alt="" />
+      <img class="floaty f4" data-parallax="0.4" src="assets/img/diamond.png" alt="" />
+      <img class="floaty f5" data-parallax="0.7" src="assets/img/carrot.png" alt="" />
+
+      <div class="phone">
+        <div class="phone-screen">
+          <img class="scene-bg" src="assets/img/bg-gameplay.png" alt="Easter Bunny Runner gameplay" />
+          <div class="phone-hud">
+            <span class="chip"><img src="assets/img/heart.png" alt="" />×3</span>
+            <span class="chip"><img src="assets/img/coin.png" alt="" />1240</span>
+          </div>
+          <img class="scene-item si-rock" src="assets/img/rockobstacle.png" alt="" />
+          <img class="scene-item si1" src="assets/img/egg-yellow.png" alt="" />
+          <img class="scene-item si2" src="assets/img/diamond.png" alt="" />
+          <img class="scene-item si3" src="assets/img/coin.png" alt="" />
+          <img class="scene-bunny" src="assets/img/runningbunny.png" alt="Running bunny" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW TO PLAY / CONTROLLERS ================= -->
+<section class="section" id="controls">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Pick up &amp; play</span>
+      <h2 class="section-title">One thumb. <span class="accent">Total control.</span></h2>
+      <p class="section-lead">No buttons, no clutter — just drag. The controls were built to feel light and instant, so the bunny goes exactly where your finger leads.</p>
+    </div>
+
+    <div class="controls-grid" style="margin-top:48px">
+      <div class="steps" data-stagger>
+        <div class="step">
+          <div class="n">1</div>
+          <div><h4>Drag to move — in every direction</h4><p>Slide your finger to steer left, right, <strong>up and down</strong>. It's full 2D movement, so you can climb the meadow or drop back to thread a gap.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div><h4>The bunny rides above your thumb</h4><p>Your character floats just above your fingertip, so your hand never hides the action or the hazard you're dodging.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div><h4>Flick for a burst of speed</h4><p>A quick swipe gives an extra nudge of momentum — perfect for last-second dodges around rocks and trees.</p></div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div><h4>Read the telegraphs</h4><p>Chevrons warn you near the horizon and a red flash + screen-shake tells you when you've taken a hit. Brief invulnerability gives you room to recover.</p></div>
+        </div>
+      </div>
+
+      <div class="controls-visual reveal">
+        <div class="control-ring">
+          <div class="control-arrows">
+            <span class="up">▲</span><span class="down">▼</span><span class="left">◀</span><span class="right">▶</span>
+          </div>
+          <img class="drag-bunny" src="assets/img/runningbunny.png" alt="Drag the bunny" />
+          <img class="hold" src="assets/img/holdicon.png" alt="Hold and drag" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHARACTERS / SKINS ================= -->
+<section class="section" id="characters" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.4),transparent)">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Meet the bunnies</span>
+      <h2 class="section-title">Five fluffy <span class="accent">heroes</span></h2>
+      <p class="section-lead">Choose the look that matches your run. Every bunny shares the same speedy hop — they just bring their own style to the meadow.</p>
+    </div>
+
+    <div class="skins" style="margin-top:36px">
+      <button class="skins-arrow prev" id="skinsPrev" aria-label="Previous bunny" type="button">‹</button>
+      <button class="skins-arrow next" id="skinsNext" aria-label="Next bunny" type="button">›</button>
+      <div class="skins-track" id="skinsTrack" data-lenis-prevent>
+        <article class="skin">
+          <div class="stage"><img src="assets/img/skin-classic-nobg.png" alt="Classic bunny" /></div>
+          <h3>Classic</h3><p class="tag">The original fluff — soft, swift &amp; ready to hop.</p>
+          <span class="pill">Starter</span>
+        </article>
+        <article class="skin">
+          <div class="stage"><img src="assets/img/skin-sporty-nobg.png" alt="Sporty bunny" /></div>
+          <h3>Sporty Bunny</h3><p class="tag">Track-ready and built for the long-distance dash.</p>
+          <span class="pill">Athletic</span>
+        </article>
+        <article class="skin">
+          <div class="stage"><img src="assets/img/skin-golden-nobg.png" alt="Golden bunny" /></div>
+          <h3>Golden Bunny</h3><p class="tag">A glittering show-off for high-score legends.</p>
+          <span class="pill">Shiny</span>
+        </article>
+        <article class="skin">
+          <div class="stage"><img src="assets/img/skin-floral-nobg.png" alt="Floral bunny" /></div>
+          <h3>Floral Bunny</h3><p class="tag">Spring petals from ears to tail. Pure Easter charm.</p>
+          <span class="pill">Bloom</span>
+        </article>
+        <article class="skin">
+          <div class="stage"><img src="assets/img/skin-royal-nobg.png" alt="Royal bunny" /></div>
+          <h3>Royal Bunny</h3><p class="tag">Crowned and confident — hop with a little majesty.</p>
+          <span class="pill">Regal</span>
+        </article>
+      </div>
+      <p class="skins-hint">‹ swipe, drag, or use the arrows to meet them all ›</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">What's inside</span>
+      <h2 class="section-title">Packed with <span class="accent">spring surprises</span></h2>
+      <p class="section-lead">Three ways to play, a meadow full of treasures, and just enough danger to keep your ears up.</p>
+    </div>
+
+    <!-- Modes -->
+    <h3 style="margin:46px 0 18px;font-size:1.3rem">🎮 Three game modes</h3>
+    <div class="grid grid-3" data-stagger>
+      <div class="card">
+        <div class="ic"><img src="assets/img/mode-endless.png" alt="" /></div>
+        <h3>Endless</h3>
+        <p>Run as far as you can. The world keeps speeding up — how long can you survive?</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/mode-challenge.png" alt="" /></div>
+        <h3>Challenge</h3>
+        <p>Hit the target score without running out of lives. Focused, punchy runs.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/mode-timetrial.png" alt="" /></div>
+        <h3>Time Trial</h3>
+        <p>Score as much as possible in <strong>90 seconds</strong>. Beat the clock, beat your best.</p>
+      </div>
+    </div>
+
+    <!-- Difficulty -->
+    <h3 style="margin:46px 0 18px;font-size:1.3rem">⚙️ Tune the challenge</h3>
+    <div class="grid grid-3" data-stagger>
+      <div class="card">
+        <div class="ic"><img src="assets/img/diff-easy.png" alt="" /></div>
+        <h3>Low</h3><p>Gentle pacing with extra breathing room — perfect for learning the ropes.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/diff-medium.png" alt="" /></div>
+        <h3>Medium</h3><p>A balanced mix of speed and spawns for the everyday hopper.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/diff-hard.png" alt="" /></div>
+        <h3>High</h3><p>Faster scroll, denser hazards, trickier moving &amp; spinning obstacles.</p>
+      </div>
+    </div>
+
+    <!-- Systems -->
+    <h3 style="margin:46px 0 18px;font-size:1.3rem">✨ Lives, power-ups &amp; more</h3>
+    <div class="grid grid-3" data-stagger>
+      <div class="card">
+        <div class="ic"><img src="assets/img/heart.png" alt="" /></div>
+        <h3>3 Lives &amp; Hearts</h3>
+        <p>Start each run with three lives. Take a hit and you get a moment of invulnerability to recover. Grab a <strong>heart</strong> to heal.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/carrot.png" alt="" /></div>
+        <h3>Power-Ups</h3>
+        <p>Pop a <strong>shield bubble</strong>, slip into <strong>slow-motion</strong>, or double your points with a <strong>×Score</strong> boost.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/diamond.png" alt="" /></div>
+        <h3>Revive with Diamonds</h3>
+        <p>Out of lives? Spend a diamond to spring back into action with a short protective shield and keep your streak alive.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/egg-basket.png" alt="" /></div>
+        <h3>Collect Everything</h3>
+        <p>Green &amp; yellow eggs, rare egg baskets, coins and shiny diamonds all add to your score and your stash.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/skin-golden.png" alt="" /></div>
+        <h3>Unlockable Skins</h3>
+        <p>Five distinct bunnies to collect and show off, each with its own personality.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="assets/img/videocall.png" alt="" /></div>
+        <h3>Bunny Calls</h3>
+        <p>A playful in-app video-call extra — say hi to the Easter bunny with a cheerful, optional little feature.</p>
+      </div>
+    </div>
+
+    <!-- Collectibles strip -->
+    <div class="collect-strip" data-stagger>
+      <div class="collect"><img src="assets/img/egg-green.png" alt="" /><div><b>+10</b><small>Green egg</small></div></div>
+      <div class="collect"><img src="assets/img/egg-yellow.png" alt="" /><div><b>+15</b><small>Yellow egg</small></div></div>
+      <div class="collect"><img src="assets/img/egg-basket.png" alt="" /><div><b>+25</b><small>Egg basket</small></div></div>
+      <div class="collect"><img src="assets/img/coin.png" alt="" /><div><b>+5</b><small>Coin</small></div></div>
+      <div class="collect"><img src="assets/img/diamond.png" alt="" /><div><b>Revive</b><small>Diamond</small></div></div>
+      <div class="collect"><img src="assets/img/heart.png" alt="" /><div><b>Heal</b><small>Heart</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCREENSHOTS ================= -->
+<section class="section" id="screenshots" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.4),transparent)">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">A peek at the meadow</span>
+      <h2 class="section-title">See it in <span class="accent">motion</span></h2>
+      <p class="section-lead">Composed previews built from the real in-game art. Swap in your own device screenshots any time — see the README for how.</p>
+    </div>
+
+    <div class="shots-grid" data-stagger style="margin-top:42px">
+      <!-- Composed mockup 1 -->
+      <div class="shot-frame">
+        <div class="shot-inner">
+          <img class="bgshot" src="assets/img/bg-gameplay.png" alt="Gameplay preview" />
+          <img class="ov si-rock" style="top:10%;right:18%;width:30%" src="assets/img/rockobstacle.png" alt="" />
+          <img class="ov" style="top:26%;left:18%" src="assets/img/egg-yellow.png" alt="" />
+          <img class="ov" style="top:46%;right:20%" src="assets/img/coin.png" alt="" />
+          <img class="ov-bunny" src="assets/img/runningbunny.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Placeholder slot for a real screenshot -->
+      <div class="shot-frame">
+        <div class="placeholder-shot">
+          <div>
+            <div class="big">📱</div>
+            <strong>Your screenshot here</strong><br />
+            <small>Drop a real 9:19 capture into <code>assets/img/</code> and replace this slot. (See README.)</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Composed mockup 2 (game over flavour) -->
+      <div class="shot-frame">
+        <div class="shot-inner">
+          <img class="bgshot" src="assets/img/bg-meadow.png" alt="Meadow preview" />
+          <img class="ov" style="top:20%;left:22%;width:18%" src="assets/img/egg-green.png" alt="" />
+          <img class="ov" style="top:34%;right:18%;width:14%" src="assets/img/diamond.png" alt="" />
+          <img class="ov" style="top:54%;left:26%;width:16%" src="assets/img/egg-basket.png" alt="" />
+          <img class="ov-bunny" src="assets/img/sadbunny.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Ready to start hopping?</h2>
+      <p>Grab Easter Bunny Runner, pick your favourite fluff, and chase that high score across an endless spring meadow.</p>
+      <!-- TODO: replace href with your real Google Play listing URL -->
+      <a class="btn-play" href="#REPLACE_WITH_PLAY_STORE_URL" aria-label="Get it on Google Play">
+        <span class="pl-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><defs><linearGradient id="gp2" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00C3FF"/><stop offset=".42" stop-color="#34B389"/><stop offset=".72" stop-color="#F4C84A"/><stop offset="1" stop-color="#FF6F4D"/></linearGradient></defs><g fill="url(#gp2)"><path d="M3.06 1.3C2.79 1.53 2.62 1.9 2.62 2.38v19.24c0 .48.17.85.45 1.07l.07.06L13.9 12.07v-.14L3.13 1.24l-.07.06z"/><path d="M17.5 15.66 13.9 12.07v-.14l3.6-3.59.08.05 4.26 2.42c1.22.69 1.22 1.82 0 2.51l-4.34 2.34z"/><path d="M17.58 15.61 13.9 11.93 3.06 22.75c.4.43 1.07.48 1.82.06l12.7-7.2z"/><path d="M17.58 8.39 4.88 1.19C4.13.77 3.46.82 3.06 1.25l10.84 10.82 3.68-3.68z"/></g></svg>
+        </span>
+        <span class="pl-txt"><span class="pl-sub">Get it on</span><span class="pl-main">Google Play</span></span>
+      </a>
+      <img class="cb-bunny" src="assets/img/whitebunny.png" alt="" />
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/img/appicon.webp" alt="" />
+        <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+      </a>
+      <p>A cosy, fast-paced arcade runner full of eggs, coins, and springtime charm. Made with 🥕 for casual hoppers everywhere.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="#features">Features</a>
+      <a href="#characters">Bunnies</a>
+      <a href="#screenshots">Screenshots</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal &amp; Help</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailto:bushramanzoor302@gmail.com">Email Support</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    © <span id="year">2026</span> Easter Bunny Runner. All rights reserved. 🐰
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS (CDN, progressive enhancement) ================= -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

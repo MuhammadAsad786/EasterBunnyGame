@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Easter Bunny Runner</title>
+<meta name="description" content="The Easter Bunny Runner privacy policy: what data the game uses, the permissions it requests and why, and the third-party services involved." />
+<link rel="icon" href="assets/img/appicon.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/appicon.webp" alt="Easter Bunny Runner icon" />
+      <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" class="active">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a class="btn btn--primary btn--sm nav-cta" href="#REPLACE_WITH_PLAY_STORE_URL">Get the Game</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="container reveal">
+    <span class="eyebrow">🔒 Your privacy matters</span>
+    <h1>Privacy Policy</h1>
+    <p>Plain-language details about what Easter Bunny Runner does &amp; doesn't do with your information.</p>
+    <span class="updated">Last updated: 30 June 2026</span>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container legal">
+
+    <div class="toc reveal">
+      <h4>On this page</h4>
+      <ol>
+        <li><a href="#intro">Overview</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#notcollect">What we do NOT collect</a></li>
+        <li><a href="#permissions">Permissions &amp; why</a></li>
+        <li><a href="#thirdparty">Third-party services</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#retention">Data retention &amp; deletion</a></li>
+        <li><a href="#changes">Changes &amp; contact</a></li>
+      </ol>
+    </div>
+
+    <div class="policy-block reveal" id="intro">
+      <h2><span class="pn">1</span> Overview</h2>
+      <p>Easter Bunny Runner (the "Game", package <strong>com.example.drop.zone</strong>) is a single-player arcade game. We designed it to be privacy-friendly: <strong>your game progress stays on your own device</strong>, and we do not run accounts, logins, or leaderboards that upload your data.</p>
+      <p>This policy explains the limited data the Game uses, the Android permissions it requests, and the one third-party service it relies on (Google Firebase for optional push notifications).</p>
+    </div>
+
+    <div class="policy-block reveal" id="collect">
+      <h2><span class="pn">2</span> Information we collect</h2>
+      <p><strong>Game progress (stored only on your device).</strong> The Game saves your settings and progress locally using Android's on-device storage (DataStore). This information never leaves your phone and is not transmitted to us or anyone else. It includes:</p>
+      <ul>
+        <li>Your high score and total number of runs</li>
+        <li>In-game currency you collect (coins and diamonds)</li>
+        <li>Unlocked &amp; selected bunny skins and earned achievements</li>
+        <li>Your preferences: sound, music, haptics, chosen difficulty, and whether you've seen the tutorial</li>
+      </ul>
+      <div class="note-box">All of the above is stored privately within the app's own sandbox on your device. Uninstalling the Game removes it.</div>
+
+      <p><strong>Push-notification token (Firebase Cloud Messaging).</strong> If notifications are enabled, Google's Firebase Cloud Messaging assigns your installation a device token so notifications can be delivered. This token is generated and handled by Google's Firebase service. The Game does not collect a profile, contact list, or personal identity from this.</p>
+    </div>
+
+    <div class="policy-block reveal" id="notcollect">
+      <h2><span class="pn">3</span> What we do <em>not</em> collect</h2>
+      <p>We want to be clear about what the Game does <strong>not</strong> do:</p>
+      <ul>
+        <li>No personal information — no name, email, phone number, or address</li>
+        <li>No device identifiers such as IMEI, serial number, or advertising ID</li>
+        <li>No location data</li>
+        <li>No contacts, call logs, photos, or files</li>
+        <li>No account or login — you play completely anonymously</li>
+        <li>No leaderboard or score upload — scores stay on your device</li>
+        <li>No selling or sharing of personal data with advertisers</li>
+      </ul>
+      <div class="note-box good">The Game includes analytics and crash-reporting libraries from Google Firebase as part of its toolkit, but they are <strong>not actively used to send your usage or crash data</strong> in this version.</div>
+    </div>
+
+    <div class="policy-block reveal" id="permissions">
+      <h2><span class="pn">4</span> Permissions &amp; why we ask</h2>
+      <p>Android requires apps to declare permissions. Here is every permission the Game uses and exactly why:</p>
+      <table class="perm-table">
+        <tr><td>Internet</td><td>Allows Firebase Cloud Messaging to receive push notifications. The Game has no other backend it sends data to.</td></tr>
+        <tr><td>Notifications</td><td>Lets the Game show you notifications (for example, reminders or news). You can turn these off in your system settings at any time.</td></tr>
+        <tr><td>Camera</td><td>Used <strong>only</strong> for the optional, playful in-app "bunny video call" self-view. The camera preview is shown live on your screen and is <strong>never recorded, stored, or transmitted</strong>. If you deny the permission, the feature simply shows a placeholder avatar instead.</td></tr>
+        <tr><td>Vibrate</td><td>Provides haptic feedback (little buzzes) on hits, pickups, and menu taps. Optional — toggle it off in settings.</td></tr>
+        <tr><td>Full-screen intent</td><td>Allows an important notification to display as a full-screen alert on supported devices.</td></tr>
+        <tr><td>Display over other apps</td><td>Supports showing certain alerts/overlays related to notifications.</td></tr>
+      </table>
+      <div class="note-box">The camera is released as soon as you leave the call screen. No video frames are saved to disk or uploaded anywhere.</div>
+    </div>
+
+    <div class="policy-block reveal" id="thirdparty">
+      <h2><span class="pn">5</span> Third-party services</h2>
+      <p>The Game uses <strong>Google Firebase Cloud Messaging</strong> to deliver push notifications. When notifications are active, Google processes a device messaging token on our behalf. Google's handling of this data is governed by Google's own privacy policy.</p>
+      <div class="pill-row">
+        <span class="pill-tag">Google Firebase Cloud Messaging</span>
+        <span class="pill-tag">Push notifications only</span>
+      </div>
+      <p style="margin-top:12px">You can review Google's privacy practices here: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--mint-deep);font-weight:600">policies.google.com/privacy</a>.</p>
+    </div>
+
+    <div class="policy-block reveal" id="children">
+      <h2><span class="pn">6</span> Children's privacy</h2>
+      <p>Easter Bunny Runner is a family-friendly arcade game suitable for all ages. Because it does not collect personal information, create accounts, or require any sign-in, it does not knowingly gather personal data from children. If you believe a child has somehow provided personal information through the Game, please contact us and we will help.</p>
+    </div>
+
+    <div class="policy-block reveal" id="retention">
+      <h2><span class="pn">7</span> Data retention &amp; deletion</h2>
+      <p>Because your game data lives only on your device, <strong>you are in full control of it</strong>:</p>
+      <ul>
+        <li>Clearing the app's data from your system settings resets your progress.</li>
+        <li>Uninstalling the Game permanently removes all locally stored data.</li>
+        <li>Turning off notifications in your system settings stops the push token from being used.</li>
+      </ul>
+    </div>
+
+    <div class="policy-block reveal" id="changes">
+      <h2><span class="pn">8</span> Changes &amp; contact</h2>
+      <p>We may update this policy as the Game evolves. Material changes will be reflected here with a new "last updated" date. Continued use of the Game after an update means you accept the revised policy.</p>
+      <p>Questions about your privacy? We're happy to help:</p>
+      <a class="mail-big" href="mailto:bushramanzoor302@gmail.com" style="margin-top:6px">
+        <span class="ic">✉️</span> bushramanzoor302@gmail.com
+      </a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/img/appicon.webp" alt="" />
+        <span>Easter&nbsp;<b>Bunny</b>&nbsp;Runner</span>
+      </a>
+      <p>A cosy, fast-paced arcade runner full of eggs, coins, and springtime charm. Made with 🥕 for casual hoppers everywhere.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#characters">Bunnies</a>
+      <a href="index.html#screenshots">Screenshots</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal &amp; Help</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailto:bushramanzoor302@gmail.com">Email Support</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    © <span id="year">2026</span> Easter Bunny Runner. All rights reserved. 🐰
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
