@@ -61,7 +61,7 @@ plus one labeled **placeholder slot**. To use real device captures:
    ```
 
 ### 3. Contact email
-The contact form and footer links use **bushramanzoor302@gmail.com**.
+The contact form and footer links use **bushramanzoor502@gmail.com**.
 - Form destination lives on the `<form data-mailto="...">` attribute in `contact.html`.
 - Submitting builds a `mailto:` link and opens the visitor's email app (no server needed).
 
