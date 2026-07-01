@@ -446,6 +446,10 @@ ul{list-style:none}
   .shots-grid{grid-template-columns:1fr}
   .footer-grid{flex-direction:column}
   .cta-band .cb-bunny{width:110px;opacity:.5}
+  .perm-table,.perm-table tbody,.perm-table tr,.perm-table td{display:block;width:100%}
+  .perm-table tr{margin-bottom:12px}
+  .perm-table tr td:first-child{border-radius:14px 14px 0 0;white-space:normal;padding-bottom:4px}
+  .perm-table tr td:last-child{border-radius:0 0 14px 14px;padding-top:4px}
 }
 
 /* Reduced motion */
