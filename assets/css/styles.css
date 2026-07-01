@@ -188,7 +188,7 @@ ul{list-style:none}
 
 /* Phone frame */
 .phone{
-  position:relative;width:268px;aspect-ratio:9/19.2;border-radius:42px;
+  position:relative;width:min(268px,72vw);aspect-ratio:9/19.2;border-radius:42px;
   background:#15102a;padding:12px;box-shadow:var(--shadow-lg);z-index:2;
 }
 .phone::after{content:"";position:absolute;top:16px;left:50%;transform:translateX(-50%);width:84px;height:20px;background:#15102a;border-radius:0 0 14px 14px;z-index:5}
@@ -242,11 +242,11 @@ ul{list-style:none}
 .step p{color:var(--ink-soft);font-size:.98rem}
 .controls-visual{position:relative;display:grid;place-items:center;min-height:360px}
 .control-ring{
-  position:relative;width:300px;height:300px;border-radius:50%;
+  position:relative;width:min(300px,80vw);height:min(300px,80vw);border-radius:50%;
   background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.9),rgba(155,208,255,.35));
   border:2px dashed rgba(95,208,168,.55);display:grid;place-items:center;box-shadow:var(--shadow);
 }
-.control-ring .drag-bunny{width:150px;will-change:transform;filter:drop-shadow(0 12px 16px rgba(63,48,90,.25))}
+.control-ring .drag-bunny{width:min(150px,40vw);will-change:transform;filter:drop-shadow(0 12px 16px rgba(63,48,90,.25))}
 .control-ring .hold{position:absolute;width:54px;bottom:42px;left:50%;transform:translateX(-50%);opacity:.9}
 .control-arrows span{position:absolute;font-size:1.6rem;color:var(--mint-deep);font-weight:700}
 .control-arrows .up{top:8px;left:50%;transform:translateX(-50%)}
@@ -450,6 +450,27 @@ ul{list-style:none}
   .perm-table tr{margin-bottom:12px}
   .perm-table tr td:first-child{border-radius:14px 14px 0 0;white-space:normal;padding-bottom:4px}
   .perm-table tr td:last-child{border-radius:0 0 14px 14px;padding-top:4px}
+  .hero-stats{gap:20px 26px}
+  .hstat .num{font-size:1.6rem}
+}
+/* Small phones — reduce large paddings so nothing feels cramped or clipped */
+@media (max-width:480px){
+  .section{padding:56px 0}
+  .section-tight{padding:48px 0}
+  .container{width:min(100% - 28px,var(--maxw))}
+  .nav .container{width:min(100% - 28px,var(--maxw))}
+  .brand{font-size:1.05rem;gap:9px}
+  .brand img{width:36px;height:36px}
+  .hero{padding-bottom:40px}
+  .hero-tag{font-size:1.06rem}
+  .card{padding:24px 20px}
+  .cta-band{padding:44px 22px}
+  .cta-band .cb-bunny{display:none}
+  .policy-block{padding:24px 20px}
+  .legal .toc{padding:20px 20px}
+  .form-card{padding:24px 20px}
+  .step{padding:18px 18px;gap:14px}
+  .step .n{width:38px;height:38px}
 }
 
 /* Reduced motion */
